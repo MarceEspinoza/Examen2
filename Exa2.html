@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+	//var name=prompt("Ingrese su nombre");
+	//var bienvenida="Bienvenid@"
+	//alert(bienvenida+" "+name);
+	function insertarnombre(){
+		if(document.getElementById("nom").value=="Andres Garcia"){
+			document.getElementById("mensaje").innerHTML="BIENVENID@"+" "+nom.value;
+		}
+	}
+	function conversion(){
+		var n1=Number(document.getElementById("n1").value);
+		var conv=n1*6.89;
+		document.getElementById('conv').value=conv;
+	}
+	</script>
+	
+<title>Examen 2</title>
+	<style>
+	.header{
+			display: flex;
+			padding: 2%;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 5px;
+			height: 1px;
+			flex-direction: column;
+			background-color: cornflowerblue;
+			justify-content: center;
+			color: white;
+			font-family:"coming-soon";
+		}
+		ul{
+			display: flex;
+			margin-left: 0%;
+			
+		}
+		li{
+			margin-right: 30px;
+			list-style: none;
+		}
+		.principal{
+			display: flex;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		.imgd{
+			display: flex;
+			float: right;
+			position: absolute;
+			left: 833px;
+			top: 97px;
+		}
+		.imgb{
+			display: flex;
+			float: right;
+			position: absolute;
+			left: 840px;
+			top: 244px;
+		}
+		.txtd{
+			position: absolute;
+			left: 982px;
+			top: 142px;
+		}
+		.txtb{
+			position: absolute;
+			left: 982px;
+			top: 285px;
+		}
+		.inicio{
+			margin-left: 5%;
+			margin-right: 5%;
+			height: 180px;
+			
+		}
+		.sesion{
+			float: left;
+			position: absolute;
+			width: 253px;
+			left: 79px;
+			top: 472px;
+			padding: 2%;
+		}
+		.saludo{
+			float: right;
+			position: absolute;
+			left: 446px;
+			top: 480px;
+			width: 257px;
+			height: 100px;
+			padding: 2%;
+		}
+		.txtinicio{
+			float: right;
+			position: absolute;
+			padding: 2px;
+			left: 845px;
+			width: 368px;
+			top: 478px;
+		}
+		.bajo{
+			display: flex;
+			padding: 3px;
+			margin-left: 5%;
+			margin-right: 5%;
+			height: 400px;
+		}
+		.txtmedio{
+			float: left;
+			padding: 3px;
+			position: absolute;
+			width: 341px;
+			height: 190px;
+			left: 59px;
+			top: 682px;
+		}
+		.conversor{
+			float: right;
+			padding: 2%;
+			position: absolute;
+			left: 458px;
+			top: 659px;
+		}
+		.imgder{
+			float: right;
+			padding: 2px;
+			position: absolute;
+			left: 850px;
+			top: 654px;
+		}
+		.txtfinal{
+			float: left;
+			padding: 2px;
+			position: absolute;
+			left: 64px;
+			top: 896px;
+			width: 717px;
+		}
+		
+	</style>
+</head>
+
+<body bgcolor="#CAE4F4">
+	<div class="header">	
+	<ul>
+		<li>Inicio</li>
+		<li>Sobre nosotros</li>
+		<li>Galeria</li>
+		<li>Contacto</li>
+	  </ul>
+	</div>
+<div class="principal">
+	<div class="imagec">
+	  <p><img src="2013-12-19 20.09.40.jpg" width="724" height="359">
+      </p>
+	  
+	</div>
+	<section class="imgd">
+	<img src="IMG-20210913-WA0010.jpg" width="136" height="121">
+	</section>
+	<section class="txtd">
+	<p><a href="">Album 1</a></p>
+  </section>
+	<section class="txtb">
+	<p><a href="">Album 2</a></p>
+	</section>
+	<section class="imgb">
+	<img src="IMG-20220621-WA0013.jpg" width="136" height="121">
+	</section>
+</div>
+<div class="inicio">
+  <section id="sesion" class="sesion">
+	<p>INICIAR SESION</p>
+		<input id="nom" type="text" size="30px" placeholder="Ingrese su nombre..."><br><br>
+		<input type="button" value="Ingresar" onClick="insertarnombre()">
+	</section>
+	<section class="saludo">
+	<img src="../../../../Pictures/icono-atencioncliente.png" width="70%" height="87%">
+	  <center><p id="mensaje"></p></center>
+	</section>
+	<section class="txtinicio">
+	<p>Los animales son una parte importante en la vida de las personas. No importa si se trata de una mascota, animales de crianza como ganado, animales de zoológico o silvestres, cada uno de ellos nos demuestra la enorme diversidad que hay en nuestro planeta y, además, dan mucha luz a la vida de las personas que tienen la oportunidad de cuidar de ellos. </p>
+	</section>
+</div>
+<div class="bajo">
+	<section class="txtmedio">
+		<p> La función principal del/la médico/a veterinario/a es la de diagnosticar, pronosticar, tratar y prevenir las enfermedades que afectan a los animales domésticos, de experimentación, exóticos, salvajes y ganaderos. Además, este/a profesional ya no se restringe solamente al área de salud animal sino que tiene un campo más amplio, y puede trabajar en el estudio, diagnóstico y tratamiento de enfermedades animales que afectan a las personas.</p>
+	</section>
+	<section class="conversor">
+		<p>CONVERSOR DOLAR A BS/BS A DOLAR</p>	
+			<input id="n1" type="text" size="30px" placeholder="Ingrese el monto en dólares..."><br><br>
+			<input id="conv" type="text" size="30px" disabled="disabled" placeholder="El monto en Bs es..."><br><br>
+			<input type="button" value="Convertir" onClick="conversion()"><br><br>
+			<p id="convertir"></p>
+	</section>
+	<section class="imgder">
+	<img src="IMG-20210915-WA0006.jpg" width="324" height="397">
+	</section>
+	<section class="txtfinal">
+	<p>El/la veterinario/a puede trabajar en una consulta veterinaria por cuenta propia o aliena, tratando animales domésticos, normalmente en zonas urbanas; o bien puede trabajar desplazándose al lugar del cliente (granjas, industrias agroalimentarias, domicilios particulares, etc.), para tratar animales para el consumo humano (vacas, ovejas, caballos, etc.), habitualmente en zonas rurales. En este sentido, aunque existan un conjunto de tareas comunes entre uno y otro perfil de médico veterinario, hay algunas específicas relacionadas con el control sanitario de los animales de consumo humano. </p>
+	</section>
+</div>
+</body>
+</html>
